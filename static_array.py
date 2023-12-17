@@ -1,9 +1,4 @@
 class Array_Seq:
-    
-    '''
-    This is a static array sequence where access is O(1) but insertion and deletion of an element is O(n)
-    '''
-    
     def __init__(self) -> None:
         self.A = []
         self.size = 0
