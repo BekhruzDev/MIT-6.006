@@ -12,6 +12,12 @@ class Linked_List_Node:
 
 
 class Linked_List_Seq:
+    '''
+    Getting/Setting: O(n), since we have to follow the next nodes of each element till we reach the i-th element
+    Insertion/Deletion at the beginning: O(1), we just relink the head
+    Insertion/Deletion at the i-th position: O(n), since we have to traverse till the i-th position
+    Insertion/Deletion at the end: O(n): this can be optimized to O(1) if we keep track of additional "tail" property 
+    '''
     def __init__(self):
         self.head = None
         self.size = 0
