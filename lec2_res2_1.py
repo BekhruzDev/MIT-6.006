@@ -98,7 +98,7 @@ class Linked_List_Seq:
         
             
    
-
+#TEST
 array = ['I', 'Love', 'ETH', 'Zurich.', 'InShaAllah', 'Soon', 'I', 'Will', 'Be', 'There...']
 linked = Linked_List_Seq()
 linked.build(array)

@@ -2,7 +2,6 @@ import random
 
 class Dynamic_Array_Seq:
     def __init__(self, r = 2):
-        super().__init__()
         self.A = []
         self.size = 0
         self.r = r
