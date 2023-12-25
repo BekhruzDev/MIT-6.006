@@ -33,7 +33,7 @@ class Linked_List_Seq:
     def __str__(self) -> str:
         res = ''
         for i in self:
-            res = res +" " + i
+            res = res +" " + str(i)
         return res
             
     def build(self,X):
@@ -89,29 +89,29 @@ class Linked_List_Seq:
         
         
 
-array = ['I', 'Love', 'ETH', 'Zurich.', 'InShaAllah', 'Soon', 'I', 'Will', 'Be', 'There...']
-linked = Linked_List_Seq()
-linked.build(array)
-print(linked.size)
-print(linked.head.item)
-for i in linked:
-    print(i)
-linked.insert_last('And Do A Great Job!')
-print(linked)
-linked.delete_at(3)
-print(linked)
-linked.set_at(2, 'ETH Zurich')
-print(linked)
-print(linked.get_at(7))
-linked.insert_first('I am Bekhruz')
-print(linked)
-linked.insert_at(1, 'I am a CS student')
-print(linked)
-linked.delete_first()
-print(linked)
-linked.insert_last("Something")
-print(linked)
-print("Deleted item", linked.delete_last())
-print(linked)
+# array = ['I', 'Love', 'ETH', 'Zurich.', 'InShaAllah', 'Soon', 'I', 'Will', 'Be', 'There...']
+# linked = Linked_List_Seq()
+# linked.build(array)
+# print(linked.size)
+# print(linked.head.item)
+# for i in linked:
+#     print(i)
+# linked.insert_last('And Do A Great Job!')
+# print(linked)
+# linked.delete_at(3)
+# print(linked)
+# linked.set_at(2, 'ETH Zurich')
+# print(linked)
+# print(linked.get_at(7))
+# linked.insert_first('I am Bekhruz')
+# print(linked)
+# linked.insert_at(1, 'I am a CS student')
+# print(linked)
+# linked.delete_first()
+# print(linked)
+# linked.insert_last("Something")
+# print(linked)
+# print("Deleted item", linked.delete_last())
+# print(linked)
 
 
