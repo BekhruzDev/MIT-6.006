@@ -11,8 +11,8 @@ def bubble_sort_rec(A, n = None, swap = True):
         n = len(A)
     if not swap or n == 1:
         return
+    swap = False
     for i in range(n - 1):
-        swap = False
         if A[i] > A[i + 1]:
             swap = True
             A[i], A[i + 1] = A[i + 1], A[i]
@@ -27,8 +27,8 @@ def bubble_sort_rec_v2(A, suffix_start = 1, swap = True):
     if not swap or suffix_start == len(A):
         return
     i = 0
+    swap = False
     while i < len(A) - suffix_start:
-        swap = False
         if A[i] > A[i+1]:
             A[i], A[i+1] = A[i+1], A[i]
             swap = True
@@ -38,7 +38,8 @@ def bubble_sort_rec_v2(A, suffix_start = 1, swap = True):
 #TEST
 print("Test")
 sample = [2,3,45,6,2,0,12,10,98,5,4,9]
-bubble_sort_rec(sample)
+sample2 = [1,2,3,4,6,12,5,7,8,100,9]
+bubble_sort_rec_v2(sample)
 
 
         

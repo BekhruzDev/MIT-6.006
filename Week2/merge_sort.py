@@ -6,7 +6,7 @@ def merge_sort(A, a, b = None):
     if b is None:
         b = len(A)
     if 1 < b - a:
-        c = (a + b + 1) // 2
+        c = (a + b + 1) // 2  # +1 for efficiency purposes
         merge_sort(A, a, c)
         merge_sort(A, c, b)
         L, R = A[a:c], A[c:b]
