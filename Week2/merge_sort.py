@@ -11,7 +11,7 @@ def merge_sort(A, a, b = None):
         merge_sort(A, c, b)
         L, R = A[a:c], A[c:b]
         i, j = 0, 0
-        while a < b: # O(n)
+        while a < b: # O(n), 2-finger rule
             if j >= len(R) or (i < len(L) and L[i] < R[j]):
                 A[a] = L[i]
                 i += 1

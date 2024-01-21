@@ -204,6 +204,7 @@ class HashTableSet:
             
     def get_table_size(self):
         return len(self.A)
+    
     def build(self, X):             # O(n)e = expected linear!
         for x in X: self.insert(x)
         

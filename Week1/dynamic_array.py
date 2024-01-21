@@ -44,9 +44,9 @@ class Dynamic_Array_Seq:
        
     def _resize(self, n):
         '''
-        If n//4 < size < n holds, then there is enough space for insertion and no need to allocate a new array.
+        If n//4 < new_size < n holds, then there is enough space for insertion and no need to allocate a new array.
         
-        if n//4 < size < n does not hold, then allocates a new array of bigger size,
+        if n//4 < new_size < n does not hold, then allocates a new array of bigger/smaller size,
         copies forward all existing elements to the new array,
         and updates the existing array to that new array.
         
