@@ -27,8 +27,7 @@ def get_damages(H):
                else:
                    A[a] = R[j]
                    j += 1
-               a += 1
-            
+               a += 1        
 
     merge_sort(H2)
     return D
