@@ -191,7 +191,7 @@ class HashTableSet:
         self._compute_bounds()
         self._resize(0)
         
-    def __len__(self): return self.size # #items stored
+    def __len__(self): return self.size  #items stored
     
     def __iter__(self):
         for X in self.A:

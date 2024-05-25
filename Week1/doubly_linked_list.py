@@ -63,8 +63,8 @@ class Doubly_Linked_List_Seq:
     def insert_first(self, x):
         new_node = Doubly_Linked_List_Node(x)
         if self.head is None:
-            self.head = x
-            self.tail = x
+            self.head = new_node
+            self.tail = new_node
         else:
             new_node.next = self.head
             self.head.prev = new_node
@@ -103,8 +103,8 @@ class Doubly_Linked_List_Seq:
     def insert_last(self, x):
         new_node = Doubly_Linked_List_Node(x)
         if self.tail is None:
-            self.head = x
-            self.tail = x
+            self.head = new_node
+            self.tail = new_node
         else:
             new_node.prev = self.tail
             self.tail.next = new_node
